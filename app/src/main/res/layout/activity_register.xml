@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".registerActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="返回" />
+        <!--返回按钮-->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="130dp"
+                android:text="嘿！\n赶紧来登录吧"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <!--大标语-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="欢迎回来~ 我们等你好久了"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <!--小标语-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#D1FFFFFF"
+                app:cardCornerRadius="25dp"
+                app:cardMaxElevation="0dp">
+
+                <EditText
+                    android:id="@+id/uer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="用户名"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="#A1008FFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <!--用户名-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#D1FFFFFF"
+                app:cardCornerRadius="25dp"
+                app:cardMaxElevation="0dp">
+
+                <EditText
+                    android:id="@+id/uer_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="密码"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="#A1008FFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <!--密码卡片-->
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#A5E9D135"
+                android:text="注册"
+                android:textColor="#BA2399FD"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--登录按钮-->
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--主体-->
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

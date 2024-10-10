@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/font_two"
+            android:text="拼图吧"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:textStyle="normal"
+            tools:ignore="HardcodedText,VisualLintOverlap" />
+        <!--关卡标题-->
+
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".Game_oneActivity">
+
+            <TextView
+                android:id="@+id/timerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/font_two"
+                android:text="用时：00秒"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:importantForAccessibility="no"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/a"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/b"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/c"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+            </LinearLayout>
+            <!-- 第一行 -->
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/d"
+                    tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/e"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/f"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+            </LinearLayout>
+            <!-- 第二行 -->
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/g"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:contentDescription="TODO"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/h"
+                    tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/i"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+            </LinearLayout>
+            <!-- 第三行 -->
+
+
+            <Button
+                android:id="@+id/pt_btn_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:backgroundTint="#1F3708"
+                android:fontFamily="@font/font_two"
+                android:onClick="restart"
+                android:text="重新开始"
+                android:textColor="#178FC2"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="137dp"
+                android:layout_height="123dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/j"
+                tools:ignore="ContentDescription" />
+            <!--原图img-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/font_one"
+                android:gravity="center_horizontal"
+                android:text="原图"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:ignore="TextSizeCheck">
+
+            </TextView>
+
+            <!--原图文字-->
+        </LinearLayout>
+        <!--图片内容-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_return"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#1F3708"
+                android:fontFamily="@font/font_two"
+                android:text="返回"
+                android:textColor="#178FC2"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

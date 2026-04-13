@@ -1,10 +1,7 @@
-# Android 登录与拼图游戏 🧩🔐  
+# Android Login and Puzzle Game 🧩🔐
 
-![GitHub stars](https://img.shields.io/github/stars/your-username/Android_login_and_jigsaw_puzzle?style=social)  
-![GitHub forks](https://img.shields.io/github/forks/your-username/Android_login_and_jigsaw_puzzle?style=social)  
+An Android application combining user login verification with an engaging puzzle game, serving as an enhanced version of the original login project.
 
-一个结合用户登录验证与趣味拼图游戏的Android应用，原登录项目的功能增强版   
+## ✨ Key Features
 
-## ✨ 功能亮点  
-
-### 拼图游戏  
+### Puzzle Game
